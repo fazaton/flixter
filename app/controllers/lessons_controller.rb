@@ -14,7 +14,7 @@ class LessonsController < ApplicationController
     
     
     def require_enrolled_for_current_lesson
-        if not current_user.enrolled_in?(@current_user)
+        if current_user.enrolled_in?(@current_user)
             redirect_to courses_path, alert: 'You are not enrolled into the course!'
         end
     end
