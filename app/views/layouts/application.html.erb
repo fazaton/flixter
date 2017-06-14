@@ -54,9 +54,47 @@
   
   <div id='footer'>
     <div class='container'>
-      <b>Footer here</b>
-      <br />
-      <%= link_to 'Teach a course', new_instructor_course_path %>
+     <div class="row">
+      <div class="col-12 col-sm-3">
+        <b>Teachers</b>
+        <br />
+        <%= link_to 'Teach a Course', new_instructor_course_path %>
+        <br />
+        <%= link_to 'My Dashboard', dashboard_path %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>About</b>
+        <br />
+        <%= link_to 'Team', '#' %>
+        <br />
+        <%= link_to 'Careers', '#' %>
+        <br />
+        <%= link_to 'Privacy Policy', '#' %>
+      </div>
+      <div class="col-12 col-sm-3">
+        <b>Contact</b>
+        <br />
+        fazaton@gmail.com
+        <br />
+        One Kendall Square
+        <br />
+        Chicago IL, 60601
+      </div>
+      <div class="col-12 col-sm-3 social">
+        <b>Social</b>
+        <br />
+        <br />
+        <%= link_to 'http://github.com/fazaton' do %>
+          <span class="fa fa-github-square fa-3x social_button"></span>
+        <% end %>
+        
+        <%= link_to 'https://www.facebook.com/fazaton' do %>
+          <span class="fa fa-facebook-square fa-3x social_button"></span>
+        <% end %>
+        
+        
+      </div>
+    </div>
     </div>
   </div>
   
